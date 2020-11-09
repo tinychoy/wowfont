@@ -5,20 +5,18 @@ color 0a
 ECHO 此脚本的行为：
 ECHO 1、将拖放到脚本的文件复制改名到脚本所在目录里对应字体文件名；
 ECHO 2、将脚本目录里对应的文件复制备份为 nameBAK.TTF；
-set pp=%1
-if not defined pp (GOTO MENU0)else (GOTO MENU)
+set fp=%1
+if not defined fp (GOTO fp)else (GOTO MENU)
 
 
-:MENU0
+:fp
 echo 目标字体为空
 echo 请将字体文件拖进来然后回车确定:
-set /p pp=
+set /p fp=
 goto MENU
 PAUSE
 
 :MENU
-::ECHO 目标字体：%pp%
-::ECHO %~dp0
 ECHO. 
 ECHO.
 ECHO.  =-=-=-=-=将选择字体改为以下字体=-=-=-=-=
@@ -56,39 +54,39 @@ PAUSE
 
 :cmd1
 copy "%~dp0ARKai_C.TTF" "%~dp0ARKai_Cbak.TTF"
-copy %pp% "%~dp0ARKai_C.TTF"
+copy %fp% "%~dp0ARKai_C.TTF"
 GOTO MENU
 
 
 
 :cmd2
 copy "%~dp0ARKai_T.TTF" "%~dp0ARKai_Tbak.TTF"
-copy %pp% "%~dp0ARKai_T.TTF"
+copy %fp% "%~dp0ARKai_T.TTF"
 GOTO MENU
 
 
 :cmd3
 copy "%~dp0ARHei.TTF" "%~dp0ARHeibak.TTF"
-copy %pp% "%~dp0ARHei.TTF"
+copy %fp% "%~dp0ARHei.TTF"
 GOTO MENU
 
 :cmd4
 copy "%~dp0FRIZQT__.TTF" "%~dp0FRIZQT__bak.TTF"
-copy %pp% "%~dp0FRIZQT__.TTF"
+copy %fp% "%~dp0FRIZQT__.TTF"
 GOTO MENU
 
 :cmd5
 copy "%~dp0ARIALN.TTF" "%~dp0ARIALNbak.TTF"
-copy %pp% "%~dp0ARIALN.TTF"
+copy %fp% "%~dp0ARIALN.TTF"
 GOTO MENU
 
 :cmd6
 copy "%~dp0FZBWJW.TTF" "%~dp0FZBWJWbak.TTF"
-copy %pp% "%~dp0FZBWJW.TTF"
+copy %fp% "%~dp0FZBWJW.TTF"
 GOTO MENU
 
 :cmd7
 copy "%~dp0FZXHJW.TTF" "%~dp0FZXHJWbak.TTF"
-copy %pp% "%~dp0FZXHJW.TTF"
+copy %fp% "%~dp0FZXHJW.TTF"
 GOTO MENU
 
