@@ -34,6 +34,7 @@ if not defined fp (GOTO fp)else (GOTO MENU)
 
 
 :fp
+CLS
 ECHO.
 ECHO 请将字体文件拖放进来然后回车确定:
 set /p fp=
