@@ -28,13 +28,13 @@ ECHO 此脚本的行为：
 ECHO 1、将拖放到脚本的文件复制改名到脚本所在目录里对应字体文件名；
 ECHO 2、将脚本目录里对应的文件复制备份为 ...BAK.TTF；
 ECHO.
-ECHO.魔兽9.0国服字体修改脚本 By 凌晨凉风-格瑞姆巴托
+ECHO.魔兽国服字体修改脚本 By 凌晨凉风-格瑞姆巴托
 set fp=%1
 if not defined fp (GOTO fp)else (GOTO MENU)
 
 
 :fp
-CLS
+cls
 ECHO.
 ECHO 请将字体文件拖放进来然后回车确定:
 set /p fp=
@@ -44,7 +44,7 @@ PAUSE
 :MENU
 ECHO. 
 ECHO.
-ECHO.  =-=-=-=-=-=魔兽9.0国服字体修改脚本=-=-=-=-=-=
+ECHO.  =-=-=-=-=-= 魔兽国服字体修改脚本 =-=-=-=-=-=
 ECHO.
 ECHO.  1  战斗数字字体(ARKai_C.TTF)
 ECHO.
