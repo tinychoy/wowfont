@@ -22,7 +22,7 @@ PAUSE
 :MENU
 ECHO. 
 ECHO.
-ECHO.  =-=-=-=-=-= 魔兽国服字体修改脚本 =-=-=-=-=-=
+ECHO.  =-=-=-=-=-= 将选择字体改为以下字体 =-=-=-=-=-=
 ECHO.
 ECHO.  1  战斗数字字体(ARKai_C.TTF)
 ECHO.
@@ -42,7 +42,7 @@ ECHO.  8  *** 更换新字体 ***
 ECHO.
 ECHO.  0  退   出
 ECHO.
-ECHO.  =-=-=-=-=-= By 凌晨凉风-格瑞姆巴托 =-=-=-=-=-=
+ECHO. 
 ECHO.
 ECHO.输入选择对应序号回车确定：
 set /p  ID=
