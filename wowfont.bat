@@ -4,14 +4,16 @@ CLS
 color 0a
 ECHO 此脚本的行为：
 ECHO 1、将拖放到脚本的文件复制改名到脚本所在目录里对应字体文件名；
-ECHO 2、将脚本目录里对应的文件复制备份为 nameBAK.TTF；
+ECHO 2、将脚本目录里对应的文件复制备份为 ...BAK.TTF；
+ECHO.
+ECHO.
 set fp=%1
 if not defined fp (GOTO fp)else (GOTO MENU)
 
 
 :fp
-echo 目标字体为空
-echo 请将字体文件拖进来然后回车确定:
+ECHO.
+ECHO 请将字体文件拖进来然后回车确定:
 set /p fp=
 goto MENU
 PAUSE
@@ -35,6 +37,8 @@ ECHO.  6  任务说明和书信、石碑的正文字体(FZBWJW.TTF)
 ECHO.
 ECHO.  7  物品、技能的说明字体(FZXHJW.TTF)
 ECHO.
+ECHO.  8  *** 更换新字体 ***
+ECHO.
 ECHO.  0  退   出
 ECHO.
 ECHO.
@@ -48,6 +52,7 @@ if "%id%"=="4" goto cmd4
 if "%id%"=="5" goto cmd5
 if "%id%"=="6" goto cmd6
 if "%id%"=="7" goto cmd7
+if "%id%"=="8" goto cmd8
 if "%id%"=="0" exit
 PAUSE
 
@@ -90,3 +95,5 @@ copy "%~dp0FZXHJW.TTF" "%~dp0FZXHJWbak.TTF"
 copy %fp% "%~dp0FZXHJW.TTF"
 GOTO MENU
 
+:cmd8
+goto fp
