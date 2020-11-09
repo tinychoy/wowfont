@@ -1,4 +1,4 @@
-# 修改魔兽字体文件的DOS批处理脚本
+# 修改魔兽字体文件的DOS批处理脚本  by 凌晨凉风-格瑞姆巴托
 将此批处理脚本wowfont.bat放在魔兽字体目录(fonts)里;
 
 
@@ -27,7 +27,7 @@ ECHO 此脚本的行为：
 ECHO 1、将拖放到脚本的文件复制改名到脚本所在目录里对应字体文件名；
 ECHO 2、将脚本目录里对应的文件复制备份为 ...BAK.TTF；
 ECHO.
-ECHO.
+ECHO.By 凌晨凉风-格瑞姆巴托
 set fp=%1
 if not defined fp (GOTO fp)else (GOTO MENU)
 
@@ -62,7 +62,7 @@ ECHO.  8  *** 更换新字体 ***
 ECHO.
 ECHO.  0  退   出
 ECHO.
-ECHO.
+ECHO.  =-=-=-=-=By 凌晨凉风-格瑞姆巴托=-=-=-=-=
 ECHO.
 ECHO.输入选择对应序号回车确定：
 set /p  ID=
