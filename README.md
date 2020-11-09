@@ -23,18 +23,19 @@
 CLS
 
 color 0a
+ECHO 
 ECHO 此脚本的行为：
 ECHO 1、将拖放到脚本的文件复制改名到脚本所在目录里对应字体文件名；
 ECHO 2、将脚本目录里对应的文件复制备份为 ...BAK.TTF；
 ECHO.
-ECHO.By 凌晨凉风-格瑞姆巴托
+ECHO.魔兽9.0国服字体修改脚本 By 凌晨凉风-格瑞姆巴托
 set fp=%1
 if not defined fp (GOTO fp)else (GOTO MENU)
 
 
 :fp
 ECHO.
-ECHO 请将字体文件拖进来然后回车确定:
+ECHO 请将字体文件拖放进来然后回车确定:
 set /p fp=
 goto MENU
 PAUSE
@@ -42,7 +43,7 @@ PAUSE
 :MENU
 ECHO. 
 ECHO.
-ECHO.  =-=-=-=-=将选择字体改为以下字体=-=-=-=-=
+ECHO.  =-=-=-=-=-=魔兽9.0国服字体修改脚本=-=-=-=-=-=
 ECHO.
 ECHO.  1  战斗数字字体(ARKai_C.TTF)
 ECHO.
@@ -62,7 +63,7 @@ ECHO.  8  *** 更换新字体 ***
 ECHO.
 ECHO.  0  退   出
 ECHO.
-ECHO.  =-=-=-=-=By 凌晨凉风-格瑞姆巴托=-=-=-=-=
+ECHO.  =-=-=-=-=-= By 凌晨凉风-格瑞姆巴托 =-=-=-=-=-=
 ECHO.
 ECHO.输入选择对应序号回车确定：
 set /p  ID=
