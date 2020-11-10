@@ -63,7 +63,7 @@ PAUSE
 if "%bak%"=="1" copy "%~dp0ARKai_C.TTF" "%~dp0ARKai_Cbak.TTF"
 copy %fp% "%~dp0ARKai_C.TTF"
 cls
-IF ERRORLEVEL 0 ECHO 字体更改成功！
+IF ERRORLEVEL 0 ECHO 战斗字体(ARKai_C.TTF)字体更改成功！
 GOTO MENU
 
 
@@ -71,7 +71,7 @@ GOTO MENU
 if "%bak%"=="1" copy "%~dp0ARKai_T.TTF" "%~dp0ARKai_Tbak.TTF"
 copy %fp% "%~dp0ARKai_T.TTF"
 cls
-IF ERRORLEVEL 0 ECHO 字体更改成功！
+IF ERRORLEVEL 0 ECHO 默认字体(ARKai_T.TTF)更改成功！
 GOTO MENU
 
 
@@ -79,21 +79,21 @@ GOTO MENU
 if "%bak%"=="1" copy "%~dp0ARHei.TTF" "%~dp0ARHeibak.TTF"
 copy %fp% "%~dp0ARHei.TTF"
 cls
-IF ERRORLEVEL 0 ECHO 字体更改成功！
+IF ERRORLEVEL 0 ECHO 聊天字体(ARHei.TTF)更改成功！
 GOTO MENU
 
 :cmd4
 if "%bak%"=="1" copy "%~dp0FRIZQT__.TTF" "%~dp0FRIZQT__bak.TTF"
 copy %fp% "%~dp0FRIZQT__.TTF"
 cls
-IF ERRORLEVEL 0 ECHO 字体更改成功！
+IF ERRORLEVEL 0 ECHO FRIZQT__.TTF更改成功！
 GOTO MENU
 
 :cmd5
 if "%bak%"=="1" copy "%~dp0ARIALN.TTF" "%~dp0ARIALNbak.TTF"
 copy %fp% "%~dp0ARIALN.TTF"
 cls
-IF ERRORLEVEL 0 ECHO 字体更改成功！
+IF ERRORLEVEL 0 ECHO ARIALN.TTF更改成功！
 GOTO MENU
 
 :cmd6
