@@ -1,5 +1,5 @@
 @echo off
-title = 魔兽国服字体修改脚本
+title 魔兽国服字体修改脚本
 CLS
 
 color 0a
@@ -11,7 +11,7 @@ ECHO.
 ECHO.魔兽国服字体修改脚本 By 凌晨凉风-格瑞姆巴托
 ECHO.
 ECHO.
-ECHO.是(1)否(0)备份文件为...BAK.TTF输入(1,0)回车:
+ECHO.是(1)否(0)备份文件为"...BAK.TTF"输入(1,0)回车:
 set /p bak=
 set fp=%1
 if not defined fp (GOTO fp)else (GOTO MENU)
