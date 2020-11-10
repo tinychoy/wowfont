@@ -20,7 +20,7 @@
   
 ```
 @echo off
-title = 魔兽国服字体修改脚本
+title 魔兽国服字体修改脚本
 CLS
 
 color 0a
