@@ -10,7 +10,7 @@
 
 #### 此脚本的行为：
 
-1. 将拖放到脚本的文件复制改名到脚本所在目录里对应字体文件名：ARHei.TTF，ARKai_C.TTF，ARKai_T.TTF，FRIZQT__.TTF，FZBWJW.TTF，FZXHJW.TTF，ARIALN.TTF；
+1. 将拖放到脚本的文件复制改名到脚本所在目录里对应字体文件名：ARHei.TTF，ARKai_C.TTF，ARKai_T.TTF，FRIZQT__.TTF，ARIALN.TTF；
 
 2. 将脚本目录里对应的文件复制备份为 "...BAK.TTF"；
 
@@ -32,7 +32,7 @@ ECHO.
 ECHO.魔兽国服字体修改脚本 By 凌晨凉风-格瑞姆巴托
 ECHO.
 ECHO.
-ECHO.是(1)否(0)备份文件为...BAK.TTF输入(1,0)回车:
+ECHO.是(1)否(0)备份文件为"...BAK.TTF"输入(1,0)回车:
 set /p bak=
 set fp=%1
 if not defined fp (GOTO fp)else (GOTO MENU)
@@ -53,21 +53,17 @@ ECHO.  *你选择的字体为：%fp%
 ECHO.
 ECHO.  =-=-=-=-=-= 将选择字体改为以下字体 =-=-=-=-=-=
 ECHO.
-ECHO.  1  战斗数字字体(ARKai_C.TTF)
+ECHO.  1  战斗字体(ARKai_C.TTF)
 ECHO.
 ECHO.  2  默认字体(ARKai_T.TTF)
 ECHO.
 ECHO.  3  聊天字体(ARHei.TTF)
 ECHO.
-ECHO.  4  金币、堆叠、按键绑定等字体(FRIZQT__.TTF)
+ECHO.  4  FRIZQT__.TTF
 ECHO.
-ECHO.  5  生命条、经验条上的字体(ARIALN.TTF)
+ECHO.  5  ARIALN.TTF
 ECHO.
-ECHO.  6  任务说明和书信、石碑的正文字体(FZBWJW.TTF)
-ECHO.
-ECHO.  7  物品、技能的说明字体(FZXHJW.TTF)
-ECHO.
-ECHO.  8  *** 更换新字体 ***
+ECHO.  6  *** 更换新字体 ***
 ECHO.
 ECHO.  0  退   出
 ECHO.
@@ -80,8 +76,6 @@ if "%id%"=="3" goto cmd3
 if "%id%"=="4" goto cmd4
 if "%id%"=="5" goto cmd5
 if "%id%"=="6" goto cmd6
-if "%id%"=="7" goto cmd7
-if "%id%"=="8" goto cmd8
 if "%id%"=="0" exit
 PAUSE
 
@@ -124,22 +118,7 @@ IF ERRORLEVEL 0 ECHO 字体更改成功！
 GOTO MENU
 
 :cmd6
-if "%bak%"=="1" copy "%~dp0FZBWJW.TTF" "%~dp0FZBWJWbak.TTF"
-copy %fp% "%~dp0FZBWJW.TTF"
-cls
-IF ERRORLEVEL 0 ECHO 字体更改成功！
-GOTO MENU
-
-:cmd7
-if "%bak%"=="1" copy "%~dp0FZXHJW.TTF" "%~dp0FZXHJWbak.TTF"
-copy %fp% "%~dp0FZXHJW.TTF"
-cls
-IF ERRORLEVEL 0 ECHO 字体更改成功！
-GOTO MENU
-
-:cmd8
 goto fp
-
 
 ```  
 
