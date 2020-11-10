@@ -32,7 +32,7 @@ ECHO.
 ECHO.魔兽国服字体修改脚本 By 凌晨凉风-格瑞姆巴托
 ECHO.
 ECHO.
-ECHO.是(1)否(any)备份文件为"...BAK.TTF"输入(1,any)回车:
+ECHO.是(1)否(any)备份文件为"...BAK.TTF"，输入(1,any)回车:
 set /p bak=
 set fp=%1
 if not defined fp (GOTO fp)else (GOTO MENU)
@@ -46,6 +46,7 @@ goto MENU
 PAUSE
 
 :MENU
+CLS
 ECHO.
 if "%bak%"=="1" (
 ECHO.  *你选择备份相应文件为"...BAK.TTF"
@@ -84,50 +85,50 @@ PAUSE
 
 
 :cmd1
-if "%bak%"=="1" copy "%~dp0ARKai_C.TTF" "%~dp0ARKai_Cbak.TTF"
+if "%bak%"=="1" copy "%~dp0ARKai_C.TTF" "%~dp0ARKai_CBAK.TTF"
 copy %fp% "%~dp0ARKai_C.TTF"
 cls
 ECHO.
 ECHO.
-IF ERRORLEVEL 0 ECHO. 战斗字体(ARKai_C.TTF)字体更改成功！
+IF ERRORLEVEL 0 ECHO. 战斗字体(ARKai_C.TTF)字体更改成功！任意键继续... & PAUSE > NUL
 
 GOTO MENU
 
 :cmd2
-if "%bak%"=="1" copy "%~dp0ARKai_T.TTF" "%~dp0ARKai_Tbak.TTF"
+if "%bak%"=="1" copy "%~dp0ARKai_T.TTF" "%~dp0ARKai_TBAK.TTF"
 copy %fp% "%~dp0ARKai_T.TTF"
 cls
 ECHO.
 ECHO.
-IF ERRORLEVEL 0 ECHO. 默认字体(ARKai_T.TTF)更改成功！
+IF ERRORLEVEL 0 ECHO. 默认字体(ARKai_T.TTF)更改成功!任意键继续... & PAUSE > NUL
 GOTO MENU
 
 
 :cmd3
-if "%bak%"=="1" copy "%~dp0ARHei.TTF" "%~dp0ARHeibak.TTF"
+if "%bak%"=="1" copy "%~dp0ARHei.TTF" "%~dp0ARHeiBAK.TTF"
 copy %fp% "%~dp0ARHei.TTF"
 cls
 ECHO.
 ECHO.
-IF ERRORLEVEL 0 ECHO. 聊天字体(ARHei.TTF)更改成功！
+IF ERRORLEVEL 0 ECHO. 聊天字体(ARHei.TTF)更改成功！任意键继续... & PAUSE > NUL
 GOTO MENU
 
 :cmd4
-if "%bak%"=="1" copy "%~dp0FRIZQT__.TTF" "%~dp0FRIZQT__bak.TTF"
+if "%bak%"=="1" copy "%~dp0FRIZQT__.TTF" "%~dp0FRIZQT__BAK.TTF"
 copy %fp% "%~dp0FRIZQT__.TTF"
 cls
 ECHO.
 ECHO.
-IF ERRORLEVEL 0 ECHO. FRIZQT__.TTF更改成功！
+IF ERRORLEVEL 0 ECHO. FRIZQT__.TTF更改成功！任意键继续... & PAUSE > NUL
 GOTO MENU
 
 :cmd5
-if "%bak%"=="1" copy "%~dp0ARIALN.TTF" "%~dp0ARIALNbak.TTF"
+if "%bak%"=="1" copy "%~dp0ARIALN.TTF" "%~dp0ARIALNBAK.TTF"
 copy %fp% "%~dp0ARIALN.TTF"
 cls
 ECHO.
 ECHO.
-IF ERRORLEVEL 0 ECHO. ARIALN.TTF更改成功！
+IF ERRORLEVEL 0 ECHO. ARIALN.TTF更改成功！任意键继续... & PAUSE > NUL
 GOTO MENU
 
 :cmd6
